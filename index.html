@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" onload="let x = 1;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="../lib/w3.css">
+	<title>Prototype</title>
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="prototype.css">
+
+
+	
+
+</head>
+<body>
+
+		<div id="header" class="w3-container">
+			<div id="logo">
+				<p href="#" class="logo"> <span style="background-color: #91A8D0;">
+				En</span><span style="background-color: #F7CAC9;">CO</span><span style=
+				"background-color: #fce9e9; border: 0.1px solid gray;">llE</span><span 
+				style="background-color: #91A8D0;">Ged</span>
+				</p>
+			</div>
+			
+
+			<div id="top_logIn" class="nodisplay">
+
+			<form action="" class="w3-small">
+		
+			<p><input type="text" class="w3-input w3-border w3-round w3_validate" placeholder="Email Address:" required="Your email Address is required"></p>
+			<p><input type="Password" class="w3-input w3-border w3-round w3_validate" placeholder="Password:" required></p>  
+			<p><input type="button" value="login" class="w3-btn w3-ripple" style="background-color: #9896A4; max-width: 70px;"></p>
+		
+			</form>
+
+			</div>
+ 
+		</div>
+			
+				
+		
+		
+	<main class="w3-container">
+
+	<div id="login_or_register">
+		<div id="logIn" class="w3-">
+
+		<form action="" class="w3-small w3-car">
+	
+		<p>
+		
+			<input type="text" class="w3-input w3-border w3-round w3_validate" placeholder="Email Address:" required="Your email Address is required">
+		</p>		
+			
+			
+			<input type="Password" class="w3-input w3-border w3-round w3_validate" placeholder="Password:" required>
+		</p>
+		<p>
+			<input type="button" value="LogIn" class="w3-btn w3-ripple" style="background-color: #9896A4">
+		</p>
+		</form>	
+	</div>
+
+		
+	<div id="signup">
+	<p class="clear"> <h2>Create an account</h2> <span class="w3-btn" style="background-color: #91A8D0" onclick="ShowSignUp()">Sign Up</span> </p>
+	
+	<form id="signup_content" method="post" action="submit_user.php" class="w3-card-">
+
+			<p><label class="w3-label">Country</label>
+			<select class="w3-select" required="required" name="country">
+				<option>Nigeria</option>
+				<option>Ghana</option>
+				<option>South Africa</option>
+			</select></p>
+
+			<p><input type="text" name="username" size="30"  class="w3-input w3-border w3-round" placeholder="Username or Nickname (optional)"></p>
+
+			<p><input type="text" name="fullname" size="30" class="w3-input w3-border w3-round" placeholder="Full name" required="required"></p>
+			
+			<p><input type="text" name="school" size="30" class="w3-input w3-border w3-round" placeholder ="school" required="required"></p>
+			
+			<p><input type="text" name="regno" size="20" class="w3-input w3-border w3-round" placeholder="Registration Number"></p>
+
+			<p><label class="w3-label">Level</label>
+			<select class="w3-select" required="required" name="level">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+			</select></p>
+			
+			<p><input type="text" name="department" size="30" class="w3-input w3-border w3-round" placeholder="Department or Discipline" required="required"></p>
+
+			<p><input type="Email" name="email" size="30" class="w3-input w3-border w3-round" placeholder="Email Address" required="required"></p>
+
+			<p><label class="w3-label">Birthday</label>
+			<input type="date" name="birthday" class="w3-input w3-date" required="required"></p>
+
+			<p><label class="w3-label">Gender</label>
+			<select class="w3-select" required="required" name="gender">
+				<option>Male</option>
+				<option>Female</option>
+				<option>Others</option>
+			</select></p>
+
+			<p><input type="Password" name="password1" size="20" class="w3-input w3-border w3-round" placeholder="Password" required="required"></p>
+
+			<p><input type="Password" name="password2" size="20" class="w3-input w3-border w3-round" placeholder="Confirm your password"></p>
+
+		<p>
+			<input type="submit" value="create user" name="submit" class="w3-btn w3-ripple" style="background-color: #9896A4"> 
+		</p>
+
+	</form>	
+</div>
+
+	<div class="welcome mythirdcolor-b w3-large w3-padding">		
+			<p> <span class="w3-xlarge w3-left w3-padding-right ">W</span><i>elcome <br>
+		to the accademic mindset that allows you to change the world</p>
+		</i> 
+	</div>
+<div class="clear"></div>
+</div>
+	
+	
+
+
+    	<div class="w3-card  w3-padding Connected  my">
+		<h2 class="myfirstcolor"> Connected</h2> <hr> 
+		<center>
+			<div class="illustrate">
+				<div class="box box1"></div>
+				<div class="box box2"></div>
+				<div class="box box3"></div>
+				<div class="box box4"></div>
+				<div class="midbox"></div>
+			</div>
+		</center>
+		
+		<p class="w3-">Connect you together, Take you round the world & Bring To You Beautiful Crafted Experiences</p>	
+	</div>
+
+	<div id="signup2" class=" " onclick="ShowSignUp()">
+		<a href="#signup">
+		<h3 style="background-color: #F7CAC9" class="w3-small">you want to join? 
+			<div class="w3-btn" style="background-color: #91A8D0" ">Sign Up</div> 
+			</h3>
+		</a>
+	</div>
+							
+	<div class="w3-card w3-padding Projects">
+		<h2 class=" myfirstcolor"> Projects</h2> <hr>
+		<center>
+			<div class="illustrate">
+				<div class="box box1"></div>
+				<div class="box box2"></div>
+				<div class="box box3"> <span class="w3-tiny">efects of micro-organisms on climatic change</span> </div>
+			</div>
+		</center>
+		
+		<p class="w3-">Bring your Projects to the notice of the world, get to know what others are working on and work with other students from around the world to bring that finishing touch to your project</p>
+	</div>
+
+		<div class="w3-card-2 w3-center play" style="background-color: #F7CAC9">
+			<h2 class="myfirstcolor">Work & Play</h2>
+			fun on the go...
+			<hr>
+			<img src="./images/workplay.gif" alt="My Picture" width="90%" height="150px">
+			<p> Stylishly combinig work and play together in the most effective way ever. 
+		</div>
+<p class="clear"></p>
+    </div >
+
+	
+
+	<div id="signup3" class=" " onclick="ShowSignUp()">
+		<a href="#signup">
+		<h3 style="background-color: #F7CAC9" class="w3-small"><div class="w3-btn" style="background-color: #91A8D0" ">Sign Up</div> now to join us</h3>
+		</a>
+	</div>
+			
+<footer class="mythirdcolor-b w3-padding w3-center">
+		<p>Encolleged by Zakariyya</p>
+</footer>
+	</main>
+	
+		
+		<script src="main.js"> </script>
+</body>
+
+
+
+
+
+
