@@ -10,10 +10,9 @@ body{
 margin: 15px 0;
 
  }
-#logo {
-	color: #666;
 
-	}
+
+
 #logo p { font-family: helvetica, Consolas, monospace; font-size: 2em; }
 #logo p span{ 
 	padding: 1px; }
@@ -26,16 +25,34 @@ margin: 15px 0;
 	transition: 1s;
 }
 
-.myfirstcolor{ color: #91A8D0 }
-.mysecondcolor{ color: #F7CAC9 }
-.myfirstcolor-b{ background-color: #91A8D0; }
-.mysecondcolor-b{ background-color: #F7CAC9; }
-.mythirdcolor-b{ background-color: #fce9e9; }
+:root{
+	--myfirstcolor: #91A8D0;
+	--mysecondcolor: #F7CAC9;
+	--mythirdcolor: #fce9e9;
+}
+
+.myfirstcolor{ color: var(--myfirstcolor) }
+.mysecondcolor{ color: var(--mysecondcolor) }
+.myfirstcolor-b{ background-color: var(--myfirstcolor); }
+.mysecondcolor-b{ background-color: var(--mysecondcolor); }
+.mythirdcolor-b{ background-color: var(--mythirdcolor); }
+
+/* theme color schemes settings */
+.darktheme {	background-color: black;}
+.darktheme p{ color: white;}
+.darktheme form input { background-color: black;}
+.whitetheme {	background-color: white;}
+.whitetheme p{ color: black;}
+
+.theme {
+	position: fixed;
+	top: 50%;
+	right: 0;
+}
 
 .Connected, .Projects{ 
 	margin: 5em 0;
 	transition: 1s }
-.Connected:hover{ background-color: white; }
 
 .Connected p, .Projects p { 
 	border-left: 1px solid grey; 
@@ -45,7 +62,6 @@ margin: 15px 0;
 	padding-bottom: -10px; }
 
 .clear { clear: both; overflow: hidden; }
-.play { background-color: white !important;  }
 
 
 .illustrate { 
@@ -69,7 +85,7 @@ margin: 15px 0;
 .Projects .illustrate{ width: 200px; }
 .Projects .box { 
 	width: 140px; height: 75px;
-	background-color: white;  }
+}
 .Projects .box2 { left: 12px; top: 12px; }
 .Projects .box3 { left: 24px; top: 24px; }
 .Projects .box4 { left: 40px; top: 40px; }
@@ -78,7 +94,9 @@ margin: 15px 0;
 
 .nodisplay { display: none; }
 
-
+footer{
+	border: 1px solid #e3e3e3;
+}
 
 
 
@@ -106,7 +124,7 @@ margin: 15px 0;
 	#header {
 	 padding: 20px 0;
 	 display: block;
-	 border-bottom: 1px solid lightblue; }
+	}
 
 	#logIn{ display: none; }
 
