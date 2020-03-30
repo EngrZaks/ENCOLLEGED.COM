@@ -41,13 +41,18 @@ margin: 15px 0;
 .darktheme {	background-color: black;}
 .darktheme p{ color: white;}
 .darktheme form input { background-color: black;}
-.whitetheme {	background-color: white;}
-.whitetheme p{ color: black;}
-
+.darktheme .Connected .box, .darktheme .Projects .box {
+	background-color: black;
+	color: #e3e3e3;
+	border-color: #666;
+}
+  
 .theme {
 	position: fixed;
-	top: 50%;
+	top: 2%;
 	right: 0;
+	border-radius: 7px;
+	
 }
 
 .Connected, .Projects{ 
@@ -59,7 +64,7 @@ margin: 15px 0;
 	margin-left: 2em; 
 	line-height: 2em;
 	padding-left: 1em;
-	padding-bottom: -10px; }
+ }
 
 .clear { clear: both; overflow: hidden; }
 
